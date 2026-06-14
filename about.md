@@ -17,7 +17,7 @@ permalink: /about/
 <section>
   <div class="container container-narrow">
     <p class="section-eyebrow">Mission</p>
-    <h2 class="section-title">Sovereign AI for everyone</h2>
+    <h2 class="section-title">Sovereign AI for Everyone!</h2>
     <p>
       LegionForge is built around one bet: <strong>the future of consequential AI is
       local-first and security-native</strong>. Cloud agents are powerful but unauditable;
