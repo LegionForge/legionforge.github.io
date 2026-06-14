@@ -1,0 +1,51 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <span class="nav-brand-mark">▲</span>
+        <span class="nav-brand-text">LegionForge</span>
+      </div>
+      <p class="footer-tagline">Sovereign AI primitives.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Core</h4>
+      <ul>
+        <li><a href="/framework/">Framework</a></li>
+        <li><a href="/guardian/">Guardian</a></li>
+        <li><a href="/security/">Security</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        {% for product in site.products %}
+          {% if product.category != "core" %}
+            <li><a href="/{{ product.id }}/">{{ product.name }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://docs.legionforge.org/">Documentation</a></li>
+        <li><a href="https://github.com/LegionForge">GitHub</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="mailto:security@legionforge.org">Security disclosures</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      LegionForge · AGPL-3.0 (framework) · MIT (Guardian) · Copyright 2026
+      <a href="https://github.com/jp-cruz">John Paul "Jp" Cruz</a><br>
+      Built on <a href="https://github.com/langchain-ai/langgraph">LangGraph</a> ·
+      Runs on Apple Silicon via <a href="https://ollama.com">Ollama</a> ·
+      <a href="mailto:jp@legionforge.org">jp@legionforge.org</a>
+    </p>
+  </div>
+</footer>

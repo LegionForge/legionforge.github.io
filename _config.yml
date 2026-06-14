@@ -1,0 +1,90 @@
+title: LegionForge
+tagline: Sovereign AI primitives
+description: >-
+  Built local-first, security-native, owned by you. Open-source software
+  that gives you AI without giving up your sovereignty.
+url: https://legionforge.org
+author: JP Cruz
+
+# Disable default Jekyll theme — using custom layouts
+theme: null
+
+# Disable the Markdown processor's smart quotes (terminal aesthetic prefers straight quotes)
+markdown: kramdown
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+# Build settings
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+
+# Site-wide data accessible in templates
+products:
+  - id: framework
+    name: LegionForge Framework
+    short: framework
+    tagline: Local-first AI agent framework, security in the foundation
+    repo: LegionForge
+    color: accent
+    category: core
+  - id: guardian
+    name: Guardian
+    short: guardian
+    tagline: Deterministic security sidecar for any agent framework
+    repo: guardian
+    color: accent
+    category: core
+  - id: jeli
+    name: Jeli
+    short: jeli
+    tagline: Sovereign, cryptographically-attested personal memory
+    repo: jeli
+    color: accent2
+    category: app
+  - id: adhd-os
+    name: ADHD-OS
+    short: ADHD-OS
+    tagline: Personal assistant framework for those with ADHD
+    repo: ADHD-OS
+    color: accent2
+    category: app
+  - id: llm-valet
+    name: llm-valet
+    short: llm-valet
+    tagline: Auto-pause/resume Ollama based on system pressure
+    repo: llm-valet
+    color: accent2
+    category: tool
+  - id: mcp-probe
+    name: mcp-probe
+    short: mcp-probe
+    tagline: Connectivity and configuration advisor for your MCP services
+    repo: mcp-probe
+    color: accent2
+    category: tool
+  - id: headroom
+    name: headroom
+    short: headroom
+    tagline: System stability monitor with AI-powered diagnostics
+    repo: headroom
+    color: accent2
+    category: tool
+  - id: hermes-tool-test-suite
+    name: hermes-tool-test-suite
+    short: hermes-tools
+    tagline: pytest harness for AI agent tool-calling reliability
+    repo: hermes-tool-test-suite
+    color: accent2
+    category: tool
+  - id: dev-rig
+    name: dev-rig
+    short: dev-rig
+    tagline: Shared CI workflows and audit harness for LegionForge projects
+    repo: dev-rig
+    color: accent2
+    category: tool
