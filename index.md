@@ -2,7 +2,7 @@
 layout: default
 title: ~
 description: >-
-  Sovereign AI primitives — built local-first, security-native, owned by you.
+  Sovereign AI for everyone — built local-first, security-native, owned by you.
   Open-source software that gives you AI without giving up your sovereignty.
 permalink: /
 ---
@@ -10,7 +10,7 @@ permalink: /
 <section class="hero">
   <div class="hero-inner">
     <img class="hero-logo" src="/assets/img/legionforge-logo.svg" alt="LegionForge" width="96" height="96">
-    <h1>Sovereign AI <span>primitives</span></h1>
+    <h1>Sovereign AI for <span>everyone</span></h1>
     <p class="tagline">Built local-first, security-native, owned by you.</p>
     <p class="subtagline">software that gives you AI without giving up your sovereignty</p>
     <div class="cta-group">

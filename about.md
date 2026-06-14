@@ -10,14 +10,14 @@ permalink: /about/
   <div class="hero-inner">
     <div class="badge">ABOUT</div>
     <h1>About <span>LegionForge</span></h1>
-    <p class="tagline">A small, opinionated ecosystem of open-source AI primitives.</p>
+    <p class="tagline">A small, opinionated ecosystem of open-source AI software.</p>
   </div>
 </section>
 
 <section>
   <div class="container container-narrow">
     <p class="section-eyebrow">Mission</p>
-    <h2 class="section-title">Sovereign AI primitives</h2>
+    <h2 class="section-title">Sovereign AI for everyone</h2>
     <p>
       LegionForge is built around one bet: <strong>the future of consequential AI is
       local-first and security-native</strong>. Cloud agents are powerful but unauditable;
