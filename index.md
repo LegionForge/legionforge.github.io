@@ -337,7 +337,7 @@ permalink: /
     <a class="btn btn-secondary" href="mailto:jp@legionforge.org">
       Request Early Access
     </a>
-    <a class="btn btn-secondary" href="https://github.com/LegionForge/LegionForge-Guardian">
+    <a class="btn btn-secondary" href="https://github.com/LegionForge/guardian">
       Guardian (PyPI) →
     </a>
   </div>
@@ -667,7 +667,7 @@ permalink: /
     </div>
     <div class="phase-row">
       <div class="phase-num">Guardian G1–G4</div>
-      <div class="phase-desc">legionforge_guardian standalone package; backward-compat shim; python -m legionforge_guardian; v0.2.0 on PyPI with /health, /metrics, canary, /invalidate-cache; public repo at LegionForge/LegionForge-Guardian with auto-sync Action</div>
+      <div class="phase-desc">legionforge_guardian standalone package; backward-compat shim; python -m legionforge_guardian; v0.2.0 on PyPI with /health, /metrics, canary, /invalidate-cache; public repo at LegionForge/guardian with auto-sync Action</div>
       <div class="status-done">✓ complete</div>
     </div>
     <div class="phase-row">
