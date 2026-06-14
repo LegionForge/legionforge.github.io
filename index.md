@@ -9,7 +9,7 @@ permalink: /
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="badge">v0.7.1-alpha · 2247 smoke tests</div>
+    <img class="hero-logo" src="/assets/img/legionforge-logo.svg" alt="LegionForge" width="96" height="96">
     <h1>Sovereign AI <span>primitives</span></h1>
     <p class="tagline">Built local-first, security-native, owned by you.</p>
     <p class="subtagline">software that gives you AI without giving up your sovereignty</p>
