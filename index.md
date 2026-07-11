@@ -3,7 +3,7 @@ layout: default
 title: ~
 description: >-
   Sovereign AI for Everyone — built local-first, security-native, owned by you.
-  Open-source software that gives you AI without giving up your sovereignty.
+  Your memory, your agents, your rules.
 permalink: /
 ---
 
@@ -12,7 +12,7 @@ permalink: /
     <img class="hero-logo" src="/assets/img/legionforge-logo.svg" alt="LegionForge" width="96" height="96">
     <h1>Sovereign AI for <span>Everyone!</span></h1>
     <p class="tagline">Built local-first, security-native, owned by you.</p>
-    <p class="subtagline">software that gives you AI without giving up your sovereignty</p>
+    <p class="subtagline">Your memory, your agents, your rules.</p>
     <div class="cta-group">
       <a class="btn btn-primary" href="/framework/">Explore the framework →</a>
       <a class="btn btn-secondary" href="https://docs.legionforge.org/">Read the docs</a>
