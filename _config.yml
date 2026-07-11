@@ -42,7 +42,7 @@ products:
   - id: jeli
     name: Jeli
     short: jeli
-    tagline: Sovereign, cryptographically-attested personal memory
+    tagline: Security and governance layer for sovereign personal memory
     repo: jeli
     color: accent2
     category: app
