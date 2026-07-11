@@ -53,20 +53,20 @@ permalink: /
         <p>Your memory, agents, rules, and data stay under your control. Inspect, tune, update, move, or forget any part of the system.</p>
       </div>
       <div class="principle">
-        <h3>Human gates on mutations</h3>
-        <p>Destructive actions cross a human-in-the-loop boundary by default.</p>
+        <h3>Local-first custody</h3>
+        <p>Core state lives on infrastructure you control. Cloud services are optional dependencies, not the source of truth.</p>
       </div>
       <div class="principle">
-        <h3>Replace AI with determinism</h3>
-        <p>The LLM is the last resort. Rules, tables, and pattern matchers run ahead.</p>
+        <h3>Human authority</h3>
+        <p>Irreversible changes, sensitive writes, and memory conflicts cross a human-controlled boundary by default.</p>
       </div>
       <div class="principle">
-        <h3>Validate at trust boundaries</h3>
-        <p>Sanitize once, at the edge. Internal code trusts internal data.</p>
+        <h3>Deterministic guardrails</h3>
+        <p>Rules, signatures, trust scores, and capability checks run before the model gets a vote.</p>
       </div>
       <div class="principle">
-        <h3>Privilege tied to tasks</h3>
-        <p>Capability is scoped to the active task and expires when it ends.</p>
+        <h3>Right to exit</h3>
+        <p>Your memories and audit trails should be portable. Leaving a vendor should not mean losing yourself.</p>
       </div>
     </div>
   </div>
@@ -77,8 +77,9 @@ permalink: /
     <p class="section-eyebrow">The ecosystem</p>
     <h2 class="section-title">Build with what fits</h2>
     <p style="color: var(--dim); margin: -1rem 0 2rem; font-size: 0.95rem;">
-      LegionForge is a family of independent, composable projects. Adopt the framework
-      end-to-end, or use Guardian standalone to harden the agent stack you already run.
+      LegionForge is a family of independent, composable projects for sovereign AI:
+      memory governance, local agents, voice interfaces, orchestration, diagnostics,
+      and security tooling. Use one piece, or wire the stack end-to-end.
     </p>
 
     <div class="product-grid">
@@ -96,16 +97,15 @@ permalink: /
 <section id="security">
   <div class="container container-narrow">
     <p class="section-eyebrow">Security posture</p>
-    <h2 class="section-title">Different from cloud agent platforms — different from unguarded OSS frameworks</h2>
+    <h2 class="section-title">Security in service of ownership</h2>
     <p>
-      Most cloud agent platforms (OpenAI Operator, Anthropic Computer Use, Google Mariner)
-      run your tasks on someone else's hardware. Your prompts, your data, your tool outputs —
-      they pass through systems you can't audit.
+      Security is not only about blocking bad tool calls. It is about making sure your
+      memory, identity, and agent history remain inspectable, portable, and governed by you.
     </p>
     <p>
-      Most open-source frameworks (LangChain, AutoGen, CrewAI) are flexible substrates that
-      <em>let</em> you add guardrails. LegionForge <em>enforces</em> them — in deterministic
-      code, on every step, with no opt-out path.
+      LegionForge favors deterministic checks, scoped capabilities, signed provenance,
+      and human-controlled mutation points. The model can help reason, but it should not
+      be the authority deciding what your system is allowed to remember or do.
     </p>
     <p>
       <a href="/security/" class="btn btn-secondary">How LegionForge handles security →</a>

@@ -10,8 +10,8 @@ permalink: /security/
 <section class="hero">
   <div class="hero-inner">
     <div class="badge">SECURITY POSTURE</div>
-    <h1>Security is the <span>foundation</span></h1>
-    <p class="tagline">Not a feature. Not a layer. The constraint every other decision is shaped around.</p>
+    <h1>Security for <span>sovereignty</span></h1>
+    <p class="tagline">Guardrails that keep memory, agents, and data under user control.</p>
   </div>
 </section>
 
@@ -20,16 +20,15 @@ permalink: /security/
     <p class="section-eyebrow">Philosophy</p>
     <h2 class="section-title">The thesis</h2>
     <p>
-      The LLM is not trustworthy. Everything that crosses a trust boundary is validated by
-      deterministic code before the LLM ever sees it, and everything the LLM produces is
-      validated again before it has any effect on the outside world.
+      LegionForge treats security as a way to preserve self-ownership. Your memory,
+      preferences, agent history, and tool permissions should be inspectable, portable,
+      and governed by rules you control.
     </p>
     <p>
-      The reflex when designing a security layer in 2026 is to put an LLM in it — "have the
-      model judge whether this call is safe." That's wrong. LLM-based checks can be
-      prompt-injected by the very payloads they're inspecting, they're slow, and they're
-      expensive. LegionForge sticks to regex, hash compare, signature verify, and capability
-      lookups. They're crude. They're also predictable and auditable.
+      LLMs are useful collaborators, but they are not the authority boundary. Anything
+      that changes memory, expands capability, touches sensitive data, or invokes a tool
+      crosses deterministic checks first: rules, signatures, trust scores, hash chains,
+      capability scopes, and human gates where the action deserves one.
     </p>
   </div>
 </section>
@@ -40,24 +39,24 @@ permalink: /security/
     <h2 class="section-title">Principles that shape every component</h2>
     <div class="principles">
       <div class="principle">
-        <h3>Fail-safe tiering</h3>
-        <p>Halt → sandbox/retry → degrade. Never silently succeed. Errors propagate with intent.</p>
+        <h3>Sovereignty first</h3>
+        <p>The owner can inspect, tune, move, revise, forget, and govern the system. Control starts with the user.</p>
       </div>
       <div class="principle">
-        <h3>Human gates on mutations</h3>
-        <p>Destructive actions cross a human-in-the-loop boundary by default.</p>
+        <h3>Local-first custody</h3>
+        <p>Core memory and audit state live on infrastructure you control. Cloud services are optional, not the root of trust.</p>
       </div>
       <div class="principle">
-        <h3>Replace AI with determinism</h3>
-        <p>The LLM is the last resort, not the first. Rules, tables, and pattern matchers run ahead.</p>
+        <h3>Human authority</h3>
+        <p>Irreversible changes, sensitive writes, and unresolved conflicts cross a human-controlled boundary.</p>
       </div>
       <div class="principle">
-        <h3>Validate at trust boundaries</h3>
-        <p>Sanitize once, at the edge. Internal code trusts internal data. Validate at the edges, not at every node.</p>
+        <h3>Deterministic guardrails</h3>
+        <p>Regex, hashes, signatures, trust scores, and capability lookups run before the model gets a vote.</p>
       </div>
       <div class="principle">
-        <h3>Privilege tied to tasks</h3>
-        <p>Capability is scoped to the active task and expires when the task ends. No persistent agent privilege.</p>
+        <h3>Scoped privilege</h3>
+        <p>Capability is tied to the active task and expires when the task ends. No persistent agent privilege by default.</p>
       </div>
     </div>
   </div>
@@ -66,7 +65,7 @@ permalink: /security/
 <section>
   <div class="container">
     <p class="section-eyebrow">Differentiators</p>
-    <h2 class="section-title">How LegionForge differs from the others</h2>
+    <h2 class="section-title">What changes when the owner is the root of trust</h2>
 
     <table>
       <thead>
@@ -122,7 +121,7 @@ permalink: /security/
         </tr>
         <tr>
           <td><strong>License</strong></td>
-          <td>AGPL-3.0 (commercial available) · Guardian MIT</td>
+          <td>Open source, project-specific licenses</td>
           <td>Proprietary</td>
           <td>MIT / Apache 2.0</td>
         </tr>
@@ -161,8 +160,8 @@ permalink: /security/
         <div class="threat-def">Tool output containing injection payloads aimed back at the model (e.g., a fetched web page).</div>
       </div>
       <div class="threat-card low">
-        <div class="threat-name">PII leakage in logs</div>
-        <div class="threat-def">Output sanitization strips PII before logging to LangSmith or returning to user.</div>
+        <div class="threat-name">Memory enclosure</div>
+        <div class="threat-def">Portable memory and local-first custody reduce the risk that a vendor account becomes the only place your identity lives.</div>
       </div>
       <div class="threat-card low">
         <div class="threat-name">Unauthorized destructive ops</div>
