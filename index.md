@@ -23,16 +23,22 @@ permalink: /
 <section id="why">
   <div class="container container-narrow">
     <p class="section-eyebrow">Why this exists</p>
-    <h2 class="section-title">Built in the opposite order</h2>
+    <h2 class="section-title">Sovereign memory for local-first AI</h2>
     <p>
-      In January 2026, OpenClaw hit 60,000 GitHub stars in 72 hours and 300,000+ users in
-      weeks. Kaspersky found 512 vulnerabilities (8 critical). Cisco found active data
-      exfiltration in third-party skills.
+      AI assistants are becoming memory systems: places where we ask questions, store
+      context, make decisions, and build up a working model of who we are. That memory
+      should not be trapped inside a vendor account or disappear when a subscription ends.
     </p>
     <p>
-      LegionForge is built in the opposite order: <strong>security first, product on top</strong>.
-      Every component lives on your hardware, under your keys. Validation runs in deterministic
-      code, not in the model. The LLM is the last resort, not the first.
+      LegionForge is built around a simpler premise: <strong>your memory belongs to you</strong>.
+      You should control what gets inserted, updated, deduplicated, enhanced, forgotten, or
+      resolved when facts conflict. You should be able to inspect and move your data, tune
+      your agents, and decide which tools can touch which parts of your identity.
+    </p>
+    <p>
+      LegionForge provides a user-first, security-conscious, open-source path for local AI:
+      owned by you, running under your rules, with deterministic validation where it matters
+      and LLMs used where they actually help.
     </p>
   </div>
 </section>
