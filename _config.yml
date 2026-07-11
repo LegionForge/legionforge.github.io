@@ -46,6 +46,7 @@ products:
     repo: jeli
     color: accent2
     category: app
+    docs_path: apps/jeli
   - id: adhd-os
     name: ADHD-OS
     short: ADHD-OS
@@ -53,6 +54,39 @@ products:
     repo: ADHD-OS
     color: accent2
     category: app
+    docs_path: apps/adhd-os
+  - id: convobox
+    name: ConvoBox
+    short: convobox
+    tagline: Local, backend-agnostic voice frontend for CLI coding agents
+    repo: convobox
+    color: accent2
+    category: app
+    docs_path: apps/convobox
+  - id: briarios
+    name: Briarios
+    short: Briarios
+    tagline: Security-native orchestration meta-layer for parallel agent workstreams
+    repo: Briarios
+    color: accent2
+    category: orchestration
+    docs_path: orchestration/briarios
+  - id: intelligence-delivery-network
+    name: Intelligence Delivery Network
+    short: IDN
+    tagline: CDN-style routing model for LLM workloads
+    repo: Intelligence-Delivery-Network
+    color: accent2
+    category: research
+    docs_path: research/intelligence-delivery-network
+  - id: idn-analyzer
+    name: idn-analyzer
+    short: idn-analyzer
+    tagline: Offline prompt profiler for LLM routing decisions
+    repo: Intelligence-Delivery-Network-Request-Analyzer
+    color: accent2
+    category: tool
+    docs_path: tools/idn-analyzer
   - id: llm-valet
     name: llm-valet
     short: llm-valet
@@ -60,6 +94,7 @@ products:
     repo: llm-valet
     color: accent2
     category: tool
+    docs_path: tools/llm-valet
   - id: mcp-probe
     name: mcp-probe
     short: mcp-probe
@@ -67,6 +102,7 @@ products:
     repo: mcp-probe
     color: accent2
     category: tool
+    docs_path: tools/mcp-probe
   - id: headroom
     name: headroom
     short: headroom
@@ -74,6 +110,7 @@ products:
     repo: headroom
     color: accent2
     category: tool
+    docs_path: tools/headroom
   - id: hermes-tool-test-suite
     name: hermes-tool-test-suite
     short: hermes-tools
@@ -81,6 +118,7 @@ products:
     repo: hermes-tool-test-suite
     color: accent2
     category: tool
+    docs_path: tools/hermes-tool-test-suite
   - id: dev-rig
     name: dev-rig
     short: dev-rig
@@ -88,3 +126,4 @@ products:
     repo: dev-rig
     color: accent2
     category: tool
+    docs_path: tools/dev-rig

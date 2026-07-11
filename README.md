@@ -22,6 +22,10 @@ framework.md            /framework/   LegionForge framework
 guardian.md             /guardian/    Guardian security sidecar
 jeli.md                 /jeli/        Jeli sovereign memory
 adhd-os.md              /adhd-os/     ADHD-OS personal assistant
+convobox.md             /convobox/    Voice frontend for CLI coding agents
+briarios.md             /briarios/    Parallel agent orchestration meta-layer
+intelligence-delivery-network.md  /intelligence-delivery-network/  LLM routing research
+idn-analyzer.md         /idn-analyzer/  Offline prompt profiler
 llm-valet.md            /llm-valet/   LLM lifecycle manager
 mcp-probe.md            /mcp-probe/   MCP advisor
 headroom.md             /headroom/    System stability monitor

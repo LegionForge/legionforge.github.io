@@ -14,6 +14,10 @@ layout: default
         View on GitHub
       </a>
       {% if page.docs_path %}<a class="btn btn-secondary" href="https://docs.legionforge.org/{{ page.docs_path }}/">Read the docs</a>{% endif %}
+      {% unless page.docs_path %}
+        {% assign product_meta = site.products | where: "id", page.product_id | first %}
+        {% if product_meta.docs_path %}<a class="btn btn-secondary" href="https://docs.legionforge.org/{{ product_meta.docs_path }}/">Read the docs</a>{% endif %}
+      {% endunless %}
     </div>
   </div>
 </section>
