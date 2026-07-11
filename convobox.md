@@ -49,8 +49,23 @@ mic -> VAD -> local STT -> safeword check -> orchestrator -> backend adapter
 
 The orchestrator decides whether each utterance is a new command, a soft interjection into an active task, or a hard stop. Backend adapters prefer structured/headless interfaces where available and fall back to terminal control only when necessary.
 
+## Current implementation
+
+- **Pipeline pieces exist:** audio capture/playback, VAD segmentation, local STT, safeword detection, TTS, orchestration, and an OpenCode adapter.
+- **Hard stops cut audio too:** a hard stop now aborts backend work and stops in-progress TTS/playback.
+- **Real audio validation has started:** TTS -> STT round trips work without a microphone, and real speaker playback including barge-in has been tested on macOS.
+- **Structured adapters are preferred:** the adapter boundary favors native HTTP/SSE or headless APIs over scraping terminal output.
+- **Licensing is being cleaned up:** ConvoBox is intended to stay MIT and free for everyone; the current Piper TTS dependency has a GPL concern, so Kokoro is the identified replacement path.
+
+## Known gaps
+
+- Live microphone capture is still unverified on the current development machine because it has no input device.
+- Windows and Linux are not yet verified, though the dependency choices are intended to be cross-platform.
+- The OpenCode adapter's initially assumed endpoint paths did not match a real `opencode serve` instance; the API shape is documented, but the adapter still needs that correction.
+- Claude Code and Codex adapters are not stable yet.
+
 ## Status
 
-Scaffolding stage. The repository has initial implementations for audio capture/playback, VAD segmentation, local STT, safeword detection, TTS, orchestration, and an OpenCode adapter. Claude Code and Codex adapters are not stable yet.
+Scaffolding stage, with real pipeline validation underway. The project is not a stable end-user app yet, but the core audio/orchestration pieces are implemented and covered by automated tests.
 
 See the [GitHub repo](https://github.com/LegionForge/convobox) for current implementation notes and testing status.
