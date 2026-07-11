@@ -49,8 +49,8 @@ permalink: /
     <h2 class="section-title">Design principles</h2>
     <div class="principles">
       <div class="principle">
-        <h3>Fail-safe tiering</h3>
-        <p>Halt → sandbox/retry → degrade. Never silently succeed.</p>
+        <h3>Sovereignty first</h3>
+        <p>Your memory, agents, rules, and data stay under your control. Inspect, tune, update, move, or forget any part of the system.</p>
       </div>
       <div class="principle">
         <h3>Human gates on mutations</h3>
