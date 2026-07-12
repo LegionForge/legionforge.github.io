@@ -204,6 +204,7 @@ permalink: /security/
     <div class="cta-group" style="justify-content: flex-start;">
       <a class="btn btn-primary" href="mailto:security@legionforge.org">Disclose a vulnerability</a>
       <a class="btn btn-secondary" href="https://docs.legionforge.org/framework/security-model/">Read the security model →</a>
+      <a class="btn btn-secondary" href="https://docs.legionforge.org/security/project-inventory/">View repo coverage →</a>
     </div>
   </div>
 </section>
