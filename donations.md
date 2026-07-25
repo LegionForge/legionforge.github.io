@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Support LegionForge
+title: Donate to LegionForge
 description: >-
-  Support LegionForge's open-source, MIT-licensed AI tooling via Ko-fi or Patreon.
+  Donate to LegionForge's open-source, MIT-licensed AI tooling via Ko-fi or Patreon.
 permalink: /donations/
 ---
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="badge">SUPPORT</div>
-    <h1>Support <span>LegionForge</span></h1>
+    <div class="badge">DONATE</div>
+    <h1>Donate to <span>LegionForge</span></h1>
     <p class="tagline">Keep sovereign, open-source AI tooling moving forward.</p>
   </div>
 </section>
