@@ -17,8 +17,8 @@ repo: dev-rig
 
 dev-rig is the **shared CI/CD substrate** used across LegionForge repos. It provides:
 
-- **Reusable GitHub Actions workflows** — lint, test, SAST, dependency audit, secrets scan, SBOM generation, container scan (Trivy)
-- **Pre-commit configuration** — ruff, mypy, bandit, ShellCheck, OSV Scanner, and gitleaks
+- **Reusable GitHub Actions workflows** — lint, test, SAST, dependency audit, secrets scan, SBOM generation, container scan (Trivy), and DAST, for Python and Node/TypeScript, plus a growing set of Rust workflows
+- **Pre-commit configuration** — individual hooks for ruff, ruff-format, bandit, and mypy
 - **Audit harness** — Python checks when applicable, OSV Scanner, gitleaks, ShellCheck, Semgrep packs, and LegionForge risky-exec rules
 
 The goal is that every project under the LegionForge org has a clear security / quality baseline without copy-pasting workflow files between repos.

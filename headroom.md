@@ -46,4 +46,4 @@ Operating both gives you both views: "what is my agent doing" and "what is my ma
 
 ## Status
 
-Active. Public. See the [GitHub repo](https://github.com/LegionForge/headroom) for the latest.
+Active. Public. **Windows-only today** — the memory-metrics collectors are Windows-specific (`VirtualAlloc`/commit-charge APIs); macOS and Linux support is architected for but not yet implemented. See the [GitHub repo](https://github.com/LegionForge/headroom) for the latest.
