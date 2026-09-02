@@ -92,7 +92,7 @@ That's the entire integration. Plug Guardian into any framework the same way.
 
 <div class="stats">
   <div class="stat">
-    <span class="stat-value">v0.1.0</span>
+    <span class="stat-value">v0.1.1</span>
     <span class="stat-label">on PyPI</span>
   </div>
   <div class="stat">

@@ -33,13 +33,20 @@ on: [pull_request, push]
 jobs:
   lint:    { uses: LegionForge/dev-rig/.github/workflows/lint.yml@main }
   test:    { uses: LegionForge/dev-rig/.github/workflows/test.yml@main }
-  sast:    { uses: LegionForge/dev-rig/.github/workflows/sast.yml@main }
+  sast:
+    uses: LegionForge/dev-rig/.github/workflows/sast.yml@main
+    permissions:
+      contents: read
+      security-events: write
+      actions: read   # required by the nested CodeQL job
   audit:   { uses: LegionForge/dev-rig/.github/workflows/audit.yml@main }
   secrets: { uses: LegionForge/dev-rig/.github/workflows/secrets.yml@main }
   sbom:    { uses: LegionForge/dev-rig/.github/workflows/sbom.yml@main }
 ```
 
 That's the entire CI config for a Python project — every workflow is sourced from dev-rig. Updating dev-rig updates the CI across all projects that reference `@main`.
+
+**The `sast` job's `permissions:` block is not optional.** A job-level `permissions:` override replaces the workflow's default rather than merging with it, so it must list everything the called workflow's own jobs need — here, all three lines above. Get this wrong (or omit it) and the entire `ci.yml` fails at GitHub's workflow-validation step before any job runs: no check ever posts, so branch-protection required-status-checks blocks every PR indefinitely with no visible error on the PR itself. Copy the permissions blocks from [`dev-rig/examples/ci-templates/`](https://github.com/LegionForge/dev-rig/tree/main/examples/ci-templates) rather than writing them from memory — those templates are covered by dev-rig's own test suite.
 
 ## Local audit
 
