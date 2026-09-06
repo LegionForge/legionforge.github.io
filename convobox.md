@@ -60,14 +60,41 @@ The orchestrator decides whether each utterance is a new command, a soft interje
 
 ## Status
 
-All three backend adapters — OpenCode (HTTP+SSE), Claude Code (stream-json subprocess), and Codex (app-server JSON-RPC) — have been driven through the full live voice loop, including real tool use, on Windows 11. Linux/macOS are implemented but not yet voice-validated end to end.
+<div class="stats">
+  <div class="stat">
+    <span class="stat-value">v0.4.0</span>
+    <span class="stat-label">on PyPI</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">MIT</span>
+    <span class="stat-label">License</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">3</span>
+    <span class="stat-label">Backends (OpenCode, Claude Code, Codex)</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">Windows 11</span>
+    <span class="stat-label">Validated end to end</span>
+  </div>
+</div>
 
-Beyond the core pipeline, a substantial interaction/safety layer has since landed: barge-in presets, a live conversation TUI, response tiering, voice-gated tool approval, acoustic echo cancellation, and the local web UI described above. This is a working, extensively tested prototype under active live-testing iteration — not yet a packaged, stable end-user release.
+**v0.4.0 — the first packaged release, on PyPI as `legionforge-convobox`.** All three backend adapters — OpenCode (HTTP+SSE), Claude Code (stream-json subprocess), and Codex (app-server JSON-RPC) — have been driven through the full live voice loop, including real tool use, on Windows 11, the reference platform. Linux and macOS run the same adapters and pipeline but were not yet voice-validated end to end as of this release.
+
+Beyond the core pipeline, a substantial interaction/safety layer has landed: barge-in presets, a live conversation TUI, response tiering, voice-gated tool approval, acoustic echo cancellation, and the local web UI described above.
+
+## Install
+
+```bash
+pip install legionforge-convobox    # or: pipx install legionforge-convobox
+```
+
+Point it at a coding-agent CLI you already have running (`opencode serve`, or `claude`/`codex` on your `PATH`) via a small `convobox.yaml`, then run `convobox`. Full walkthrough — picking a voice, finding the right audio device, everything between "installed" and "talking to it comfortably" — in [docs/QUICKSTART.md](https://github.com/LegionForge/convobox/blob/main/docs/QUICKSTART.md).
 
 ## Known limits
 
-- Linux and macOS run the same adapters/pipeline as Windows but haven't been voice-validated end to end there yet.
+- Linux and macOS run the same adapters/pipeline as Windows but had not been voice-validated end to end as of the v0.4.0 release — see the [GitHub repo](https://github.com/LegionForge/convobox) for current status, which moves faster than tagged releases.
 - Browser-side approve/deny for the web UI isn't built — voice and the TUI remain the only channels for that decision.
 - No remote-access or authentication story for the web UI, by design — it's meant for the same machine only.
 
-See the [GitHub repo](https://github.com/LegionForge/convobox) for current implementation notes and testing status.
+See the [GitHub repo](https://github.com/LegionForge/convobox) for current implementation notes and testing status, and [CHANGELOG.md](https://github.com/LegionForge/convobox/blob/main/CHANGELOG.md) for the per-release log.
